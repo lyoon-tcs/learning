@@ -1,5 +1,6 @@
-const greet = (person: string, date: Date) => {
-  console.log(`Hello ${person}, today is ${date.toDateString()}!`);
-};
+function printCoord(pnt: { x: number; y: number }) {
+  console.log(`The coordinate's x value is ${pnt.x}`);
+  console.log(`The coordinate's y value is ${pnt.y}`);
+}
 
-greet('Lawrence', new Date());
+printCoord({ x: 3, y: 7 });
