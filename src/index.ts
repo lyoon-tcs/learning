@@ -71,9 +71,9 @@ export function logPerson(person: Person) {
 }
 
 export function filterUsers(persons: Person[], criteria: number) {
-  const asdf = persons.filter(isUser);
-  const final = asdf.filter((correct) => {
-    return correct.age === criteria;
+  const users = persons.filter(isUser);
+  const final = users.filter((user) => {
+    return user.age === criteria;
   });
   return final;
 }
