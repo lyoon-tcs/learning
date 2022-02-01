@@ -76,6 +76,7 @@ export function filterUsers(persons: Person[], criteria: { age: number }) {
     return user.age === criteria.age;
   });
   // what in the world is going on here???
+  // want to return an array of objects with matching CRITERIA and USER
   return final;
 }
 
