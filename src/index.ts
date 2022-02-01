@@ -75,6 +75,7 @@ export function filterUsers(persons: Person[], criteria: number) {
   const final = users.filter((user) => {
     return user.age === criteria;
   });
+  // what in the world is going on here???
   return final;
 }
 
