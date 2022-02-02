@@ -75,8 +75,7 @@ export function filterUsers(persons: Person[], criteria: Partial<User>) {
   const final = users.filter((user) => {
     return user.age === criteria.age;
   });
-  // what in the world is going on here???
-  // want to return an array of objects with matching CRITERIA and USER
+  // Self note - dunno why they did it that way - so confusing. this way is way easier for me to grasp
   return final;
 }
 
