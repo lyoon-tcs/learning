@@ -70,7 +70,7 @@ export function logPerson(person: Person) {
   console.log(` - ${person.name}, ${person.age}, ${additionalInformation}`);
 }
 
-export function filterUsers(persons: Person[], criteria: { age: number }) {
+export function filterUsers(persons: Person[], criteria: Partial<User>) {
   const users = persons.filter(isUser);
   const final = users.filter((user) => {
     return user.age === criteria.age;
